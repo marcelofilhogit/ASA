@@ -5,5 +5,39 @@
         <div class="row justify-content-center">
             <h1>Bem-vindo {{ current_user.username }}</h1>
         </div>
+
+        <div class="row py-2">
+            <div class="col-md-9 h2">
+                Tabela de posts
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-lg btn-outline-success">Novo post</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Data de criação</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-primary">Editar</button>
+                            <button type="button" class="btn btn-outline-danger">Deletar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
     </div>
 {% endblock content %}
