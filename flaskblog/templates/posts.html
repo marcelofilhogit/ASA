@@ -15,8 +15,8 @@
                     <div class="card-body">
                         <p class="card-text subTitulo text-dark h2">{{ post.title }}</p>
                         <p class="text-dark">Autor do post: {{ post.author.username }}</p>
-                        <p class="card-text text-dark">{{ post.content }}</p>
-                        <!-- <div class="btn btn-outline-primary">Ver mais</div> -->
+                        <p class="card-text text-dark">{{ post.content[0:50] }}...</p>
+                        <button class="btn btn-outline-primary">Ler mais</button>
                     </div>
                 </a>
             {% endfor %}
